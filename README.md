@@ -1,46 +1,54 @@
-# CBPortfolio
-(with a very special version for my #1 fan)
-Chandler terrified
-“Could I BE any more watched?”
-There are two versions of this portfolio:
+# CBPortfolio  
+*(with a very special version for my #1 fan)*
 
-One for normal, well-adjusted fans
-One for you (yes, the person who’s reading this right now)
+<img src="https://i.pinimg.com/originals/8c/66/03/8c66035fb68dbffd1e4074b48a86cd85.jpg" alt="Chandler terrified" width="100%"/>
 
-You somehow ended up on the second one.
+> **“Could I BE any more watched?”**
+
+There are two versions of this portfolio:  
+- One for normal, well-adjusted fans  
+- One for **you** (yes, the person reading this right now)
+
+You somehow ended up on the second one.  
 There’s no escape.
-Features
 
-Fully functional personalized Restraining Order generator (printable, legally terrifying)
-Netflix-style horizontal carousels (daily routine, weapons, top clicks, meetups)
-“I’M TERRIFIED OF YOU” in giant red letters
-Real-time name injection via URL params
-100% vanilla – no frameworks, no regrets
-Lasagna on the fire escape (emotional support only)
+### Live Site
+https://chandlerportfolio.netlify.app
 
-Tech Stack
-HTML5
-CSS3
-JavaScript
-Vercel
+### Features
+- Fully functional **personalized Restraining Order generator** (printable & terrifying)  
+- Netflix-style carousels (daily routine, weapons, top clicks, meetups)  
+- “I’M TERRIFIED OF YOU” in giant red letters  
+- Real-time name injection via URL parameters  
+- 100% vanilla HTML/CSS/JS – no frameworks, no regrets  
+- Lasagna on the fire escape (emotional support only)
 
+### Tech Stack
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white)
 
-File Structure
-text
+### File Structure
 ├── stalker.html           → the version YOU found
 ├── fan.html               → the "normal" one (boring)
-├── restraining-order.html → the legal masterpiece
-├── style2.css             → all the Netflix magic
-├── carousel.js            → smooth sliding goodness
-└── restraining.js         → injects your name into the order
+├── restraining-order.html → your personalized legal nightmare
+├── style2.css             → Netflix magic
+├── carousel.js            → smooth sliding
+└── restraining.js         → puts your name on the order
 
 
-Warning
-Chandler already knows you opened this repo.
-He’s hiding behind the duck and chick right now.
-Please be normal.
-“Sarcasm didn’t protect me. You’re still here.”
+### Warning
+Chandler already knows you’re here.  
+He’s currently hiding behind the duck and chick.
+
+> “Sarcasm didn’t protect me. You’re still here.”
+
 Made with love, panic, and way too many screenshots of Matthew Perry looking scared.
-Star this repo if you’re a normal fan
+
+Star this repo if you’re a normal fan  
 Star + fork if you’re the reason he needs that restraining order
-Now go generate your paperwork. Chandler’s waiting.
+
+Now go generate your paperwork. Chandler’s waiting (and crying).
+
+https://chandlerportfolio.netlify.app
