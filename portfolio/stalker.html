@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chandler Bing | For My #1 Fan (Please Stop)</title>
+  <link rel="stylesheet" href="style2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Netflix Navbar -->
+  <header class="navbar">
+    <div class="logo">N</div>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#routine">Daily Routine</a>
+      <a href="#weapons">Self-Defense</a>
+      <a href="#restraining">Legal Action</a>
+      <a href="#scared">I'm Scared</a>
+    </nav>
+    <div class="profile">
+      <img src="https://i.pinimg.com/1200x/42/0e/80/420e806ebd71bbeacd2049209209b296.jpg" alt="Chandler" class="avatar">
+      <span>Chandler (send help)</span>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="https://i.pinimg.com/1200x/67/5d/af/675dafbea9fe465f4db74bc306a7f5d0.jpg" alt="Chandler terrified" class="hero-bg">
+    <div class="hero-gradient"></div>
+    <div class="hero-content">
+      <h1>CHANDLER BING</h1>
+      <p class="tagline">Could I <em>BE</em> any more yours?</p>
+      <p class="description">
+        Full-time duck dad • Professional panic attacker • Currently hiding<br><br>
+        "Welcome, my most dedicated fan. Yes, this site was made for you. Please be normal."
+      </p>
+    </div>
+    <div style="position:absolute;top:20px;right:20px;background:#ffff99;color:#000;padding:15px 30px;border-radius:12px;transform:rotate(8deg);font-family:'Comic Sans MS';font-size:22px;box-shadow:0 6px 20px rgba(0,0,0,0.7);">
+      I know you're here again
+    </div>
+  </section>
+
+  <!-- 1. Daily Routine (Stalker Edition) -->
+  <section id="routine" class="row">
+    <h2>My Very Predictable Schedule (You're Welcome)</h2>
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="carousel-item"><img src="https://i.pinimg.com/736x/9b/3e/1e/9b3e1e2d574ab15dd051c8f3600ed0b9.jpg"><div class="item-titles">7:12 AM –Meditation</div></div>
+        <div class="carousel-item"><img src="https://i.pinimg.com/736x/55/3a/3e/553a3ec97bdba98ce4e7d9ca4ce43045.jpg"><div class="item-titles">9:03 AM – Office cubicle</div></div>
+        <div class="carousel-item"><img src="https://i.pinimg.com/1200x/cd/32/73/cd32730b60a59cb1f787d68549b0a761.jpg"><div class="item-titles">12:30 PM – Daily Crossword</div></div>
+        <div class="carousel-item"><img src="https://i.pinimg.com/736x/28/92/3e/28923ef6f551a194edb347a7173302e3.jpg"><div class="item-titles">8:47 PM – Monica’s Place</div></div>
+      </div>
+      <button class="prev">‹</button><button class="next">›</button>
+    </div>
+  </section>
+
+  <!-- 2. Weapons I Carry -->
+  <section id="weapons" class="row">
+    <h2>Weapons I Carry (Just In Case)</h2>
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="carousel-item"><img src="https://i.pinimg.com/736x/19/c0/ec/19c0ec48e0be49ed23a8a1284365789e.jpg"><div class="item-titles">DishWasher (Lethal)</div></div>
+        <div class="carousel-item"><img src="https://i.pinimg.com/1200x/80/0d/c1/800dc14647a0b2500e523b66ebddd4f7.jpg"><div class="item-titles">High Pitched Crying Babies</div></div>
+        <div class="carousel-item"><img src="https://i.pinimg.com/736x/40/8a/90/408a900271be3f84c832720d630462bf.jpg"><div class="item-titles">Martial Arts</div></div>
+        <div class="carousel-item"><img src="https://i.pinimg.com/1200x/f6/5c/01/f65c01b7df3adae559a69456fc7de5cc.jpg"><div class="item-titles">Mentally Tested Friends</div></div>
+      </div>
+      <button class="prev">‹</button><button class="next">›</button>
+    </div>
+  </section>
+
+  <!-- 3. Generate Restraining Order -->
+<section id="restraining" class="row">
+  <h2>Generate Your Very Own Restraining Order</h2>
+  <div style="text-align:center;padding:80px 20px;">
+    <p style="font-size:1.4rem;margin-bottom:30px;">
+      Enter your name and receive a personalized legal document<br>
+      
+    </p>
+
+    <!-- Name Input – full width & centered -->
+    <div style="display:flex;justify-content:center;margin-bottom:30px;">
+      <input type="text" id="stalkerName" placeholder="Enter Your Name" 
+             style="padding:16px 20px;width:420px;max-width:90%;font-size:18px;border-radius:8px;border:none;text-align:center;">
+    </div>
+
+    <!-- Button – perfectly centered below the input -->
+    <div style="display:flex;justify-content:center;">
+      <a href="restraining-order.html?name=My+Beloved+Stalker" 
+         target="_blank" 
+         id="restrainingLink"
+         style="
+           display:inline-block;
+           padding:18px 60px;
+           background:#e50914;
+           color:#fff;
+           font-size:24px;
+           font-weight:bold;
+           text-decoration:none;
+           border-radius:12px;
+           cursor:pointer;
+           box-shadow:0 8px 25px rgba(229,9,20,0.5);
+           transition:all 0.3s ease;
+         "
+         onmouseover="this.style.background='#c00'; this.style.transform='scale(1.05)'"
+         onmouseout="this.style.background='#e50914'; this.style.transform='scale(1)'">
+        GENERATE RESTRAINING ORDER
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- 4. Final Plea -->
+<section id="scared" class="row">
+  <h2>I’m Actually Terrified. Please Don’t Hurt Me.</h2>
+  <div style="text-align:center;padding:120px 20px;max-width:900px;margin:0 auto;">
+    <h1 style="font-family:'Bebas Neue',sans-serif;font-size:7rem;letter-spacing:8px;color:#e50914;">
+      I’M TERRIFIED OF YOU
+    </h1>
+    <p style="font-size:2.2rem;line-height:1.8;margin:40px 0;">
+      Sarcasm didn’t protect me. You’re still here.<br><br>
+      Please take the lasagna from the fire escape and just… leave.<br>
+      The duck is scared too.
+    </p>
+    <p style="margin-top:60px;font-size:1.6rem;color:#666;">
+      Could I <em>BE</em> any more vulnerable right now?
+    </p>
+  </div>
+</section>
+
+<!-- Scripts (clean & separated) -->
+<script>
+// Auto-update the restraining order link when user types
+document.getElementById('stalkerName')?.addEventListener('input', function() {
+  const name = this.value.trim() || 'My Beloved Stalker';
+  document.getElementById('restrainingLink').href = 
+    'restraining-order.html?name=' + encodeURIComponent(name);
+});
+</script>
+
+<script src="carousel.js"></script>
+<script src="restr.js"></script>
+</body>
+</html>

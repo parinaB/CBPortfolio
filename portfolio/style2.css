@@ -1,0 +1,368 @@
+/* style2.css — Clean, decent, Netflix-real rectangular cards */
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body { background:#000; color:#fff; font-family:'Helvetica Neue',sans-serif; overflow-x:hidden; }
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 4%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, transparent 100%);
+  z-index: 1000;
+}
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.logo { 
+  font-family:'Bebas Neue',sans-serif; 
+  font-size:48px; 
+  color:#e50914; 
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+nav a { 
+  color:#fff; 
+  text-decoration:none; 
+  font-weight:500; 
+  font-size:14px; 
+  transition: color 0.3s;
+}
+nav a:hover, nav a.active { 
+  color:#e50914;
+  font-weight:700; 
+}
+.profile { 
+  display:flex; 
+  align-items:center; 
+  gap:10px; 
+  font-size:14px; 
+}
+.avatar { 
+  width:36px; 
+  height:36px; 
+  border-radius:6px; 
+  object-fit: cover;
+}
+
+/* HERO — same perfect left fade */
+.hero { position:relative; height:100vh; }
+.hero-bg { position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:-2; }
+.hero-gradient {
+  position:absolute; top:0; left:0; width:100%; height:100%; z-index:-1;
+  background: linear-gradient(to right, rgba(0,0,0,0.98) 0%, rgba(0,0,0,0.7) 30%, transparent 70%),
+              linear-gradient(to bottom, transparent 60%, #000 100%);
+}
+.hero-content { 
+  position:absolute;
+  bottom:22%; 
+  left:3%; 
+  max-width:45%; 
+  z-index:1;
+}
+.hero-content h1 { font-family:'Bebas Neue',sans-serif; font-size:5rem; letter-spacing:9px; }
+.tagline { font-size:2.6rem; font-style:italic; }
+.description { font-size:1.3rem; line-height:1.7; margin-bottom:35px; }
+
+/* CLEAN RECTANGULAR CARDS */
+.row { 
+  padding: 130px 4% 20px 4%; 
+  scroll-margin-top: 80px; /* Account for fixed navbar */
+}
+.row h2 { font-size:1.5rem; margin-bottom:18px; }
+
+.carousel {
+  position:relative; overflow:hidden;
+}
+.carousel-track {
+  display:flex; gap:20px; transition:transform 0.6s ease;
+}
+.carousel-item-link {
+  text-decoration: none;
+  display: block;
+  flex-shrink: 0;
+}
+.carousel-item {
+  position:relative;
+  width:300px;           /* Netflix-style card width */
+  height:250px;          /* 3:2 ratio — Netflix poster size */
+  border-radius:8px;
+  overflow:hidden;
+  cursor:pointer;
+  flex-shrink: 0;
+}
+.carousel-item img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:all 0.4s ease;
+  display:block;
+}
+
+/* Title overlay */
+.item-title, .item-titles {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  color:#fff;
+  font-size:20px;
+  font-weight:700;
+  text-align:center;
+  opacity:0;
+  transition:opacity 0.4s ease;
+  z-index:2;
+  text-shadow:0 2px 10px rgba(0,0,0,0.9);
+  padding:10px 15px;
+  pointer-events:none;
+}
+
+/* Hover effect - reduce image opacity and show title */
+/* For carousel items with links */
+.carousel-item-link:hover .carousel-item img {
+  opacity:0.3;
+  transform:scale(1.05);
+}
+.carousel-item-link:hover .carousel-item .item-title,
+.carousel-item-link:hover .carousel-item .item-titles {
+  opacity:1;
+}
+
+/* For carousel items without links (like Technical Skills) */
+.carousel-item:hover img {
+  opacity:0.3;
+  transform:scale(1.05);
+}
+.carousel-item:hover .item-title,
+.carousel-item:hover .item-titles {
+  opacity:1;
+}
+
+/* Arrows */
+.prev, .next {
+  position:absolute; 
+  top:50%; 
+  transform:translateY(-50%);
+  background:rgba(0,0,0,0.7); 
+  color:#fff; 
+  border:none; 
+  width:50px; 
+  height:200px;
+  font-size:44px; 
+  cursor:pointer; 
+  opacity:0; 
+  z-index:10;
+  transition: opacity 0.3s, background 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel:hover .prev, .carousel:hover .next { opacity:1; }
+.prev:hover, .next:hover { background:rgba(0,0,0,0.9); }
+.prev { left:0; } 
+.next { right:0; }
+
+/* REVIEWS SECTION */
+.reviews-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.review-card {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(229, 9, 20, 0.5);
+  box-shadow: 0 8px 24px rgba(229, 9, 20, 0.2);
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.reviewer-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e50914 0%, #b00610 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.reviewer-info {
+  flex: 1;
+}
+
+.reviewer-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.reviewer-relation {
+  font-size: 13px;
+  color: #999;
+  font-weight: 400;
+}
+
+.review-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+.review-rating {
+  font-size: 18px;
+  color: #ffd700;
+  letter-spacing: 2px;
+}
+
+/* SOCIAL LINKS CAROUSEL */
+.social-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+.social-item img {
+  display: none;
+}
+
+.social-icon {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #e50914;
+  margin-bottom: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 2px;
+  transition: all 0.4s ease;
+  z-index: 2;
+}
+
+.carousel-item-link:hover .social-item {
+  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+}
+
+.carousel-item-link:hover .social-item .social-icon {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.carousel-item-link:hover .social-item .item-title {
+  opacity: 1;
+}
+
+/* CONTACT FORM */
+.contact-section {
+  padding-bottom: 80px;
+  scroll-margin-top: 80px; /* Account for fixed navbar */
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Helvetica Neue', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #e50914;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #999;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px 24px;
+  background: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+  background: #b00610;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(229, 9, 20, 0.4);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
