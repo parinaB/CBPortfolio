@@ -23,11 +23,7 @@ HTML5
 CSS3
 JavaScript
 Vercel
-How to Run Locally
-Bashgit clone https://github.com/yourusername/chandler-bing-stalker.git
-cd chandler-bing-stalker
-# Just double-click stalker.html or fan.html
-No build step. No npm. Just pure 1994 energy.
+
 
 File Structure
 text├── stalker.html           → the version YOU found
