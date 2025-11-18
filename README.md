@@ -1,7 +1,7 @@
 # CBPortfolio  
 *(with a very special version for my #1 fan)*
 
-<img src="https://i.pinimg.com/originals/8c/66/03/8c66035fb68dbffd1e4074b48a86cd85.jpg" alt="Chandler terrified" width="100%"/>
+
 
 > **“Could I BE any more watched?”**
 
