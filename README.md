@@ -26,12 +26,15 @@ Vercel
 
 
 File Structure
-text├── stalker.html           → the version YOU found
+text
+├── stalker.html           → the version YOU found
 ├── fan.html               → the "normal" one (boring)
 ├── restraining-order.html → the legal masterpiece
 ├── style2.css             → all the Netflix magic
 ├── carousel.js            → smooth sliding goodness
 └── restraining.js         → injects your name into the order
+
+
 Warning
 Chandler already knows you opened this repo.
 He’s hiding behind the duck and chick right now.
